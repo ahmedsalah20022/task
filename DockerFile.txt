@@ -1,0 +1,9 @@
+FROM openjdk
+
+WORKDIR /application
+
+COPY ahmedsalah.java .
+
+RUN javac ahmedsalah.java
+
+CMD java ahmedsalah
